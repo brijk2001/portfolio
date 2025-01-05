@@ -47,6 +47,8 @@ To run this project locally:
    npm start
    ```
 
+---
+
 ## Future Enhancements:
 
 - Adding a blog section to share my knowledge and experiences.
