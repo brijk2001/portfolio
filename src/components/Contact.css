@@ -1,0 +1,53 @@
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #3d9a99;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}

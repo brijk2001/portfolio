@@ -1,0 +1,126 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Light Mode Colors */
+  --background: linear-gradient(
+    to right,
+    #ece9e6,
+    #ffffff
+  ); /* Light gradient */
+  --primary-color: #4cafb8; /* Teal */
+  --secondary-color: #6b5b95; /* Purple */
+  --text-color: #333;
+  --heading-color: #111;
+  --card-background: #ffffff;
+  --link-hover: #4cafb8;
+}
+
+body.dark-mode {
+  /* Dark Mode Colors */
+  --background: linear-gradient(to right, #232526, #414345); /* Dark gradient */
+  --primary-color: #4cafb8; /* Teal remains same */
+  --secondary-color: #a29bfe; /* Light Purple */
+  --text-color: #f4f4f4;
+  --heading-color: #ffffff;
+  --card-background: #2b2b2b;
+  --link-hover: #62d1c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #3d9a99;
+}
+
+/* Section Styles */
+.card {
+  background: var(--card-background);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--text-color);
+}
+
+body.dark-mode .footer {
+  background-color: #1a1a1a;
+}
+
+/* GLOBAL RESPONSIVE RULES */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
