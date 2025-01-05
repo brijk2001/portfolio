@@ -5,7 +5,6 @@ function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Check localStorage for theme preference on component load
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
@@ -14,7 +13,6 @@ function Header() {
     }
   }, []);
 
-  // Toggle between light and dark modes
   const toggleTheme = () => {
     if (isDarkMode) {
       document.body.classList.remove("dark-mode");
@@ -26,7 +24,6 @@ function Header() {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Toggle the menu for mobile
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -34,7 +31,13 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar">
-        <div className="logo">Brijesh Kandolkar</div>
+        <div
+          className="logo"
+          onClick={() => window.location.reload()}
+          style={{ cursor: "pointer" }}
+        >
+          Brijesh Kandolkar
+        </div>
         <button className="menu-toggle" onClick={toggleMenu}>
           {menuOpen ? "✖" : "☰"}
         </button>

@@ -1,15 +1,9 @@
-/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
-  /* Light Mode Colors */
-  --background: linear-gradient(
-    to right,
-    #ece9e6,
-    #ffffff
-  ); /* Light gradient */
-  --primary-color: #4cafb8; /* Teal */
-  --secondary-color: #6b5b95; /* Purple */
+  --background: linear-gradient(to right, #ece9e6, #ffffff);
+  --primary-color: #4cafb8;
+  --secondary-color: #6b5b95;
   --text-color: #333;
   --heading-color: #111;
   --card-background: #ffffff;
@@ -17,10 +11,9 @@
 }
 
 body.dark-mode {
-  /* Dark Mode Colors */
-  --background: linear-gradient(to right, #232526, #414345); /* Dark gradient */
-  --primary-color: #4cafb8; /* Teal remains same */
-  --secondary-color: #a29bfe; /* Light Purple */
+  --background: linear-gradient(to right, #232526, #414345);
+  --primary-color: #4cafb8;
+  --secondary-color: #a29bfe;
   --text-color: #f4f4f4;
   --heading-color: #ffffff;
   --card-background: #2b2b2b;
@@ -82,7 +75,6 @@ button:hover {
   background-color: #3d9a99;
 }
 
-/* Section Styles */
 .card {
   background: var(--card-background);
   border-radius: 12px;
@@ -96,7 +88,6 @@ button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   background-color: #f7f7f7;
@@ -109,7 +100,6 @@ body.dark-mode .footer {
   background-color: #1a1a1a;
 }
 
-/* GLOBAL RESPONSIVE RULES */
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 1.5rem;

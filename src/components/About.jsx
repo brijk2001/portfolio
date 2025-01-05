@@ -7,15 +7,14 @@ function About() {
       const particles = document.querySelectorAll(".particle");
       const aboutSection = document.querySelector(".about");
 
-      // Get the dimensions of the About section
       const rect = aboutSection.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2; // X-coordinate of the center
-      const centerY = rect.top + rect.height / 2; // Y-coordinate of the center
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
 
       particles.forEach((particle) => {
         const speed = particle.getAttribute("data-speed");
-        const x = ((e.clientX - centerX) * speed) / 150; // Real-time adjustment based on distance
-        const y = ((e.clientY - centerY) * speed) / 150; // Real-time adjustment based on distance
+        const x = ((e.clientX - centerX) * speed) / 150;
+        const y = ((e.clientY - centerY) * speed) / 150;
 
         particle.style.transform = `translate(${x}px, ${y}px)`;
       });
@@ -30,7 +29,6 @@ function About() {
 
   return (
     <section id="about" className="about">
-      {/* Interactive Graphics */}
       <div className="graphics-container">
         <div className="particle" data-speed="3"></div>
         <div className="particle" data-speed="-5"></div>
@@ -39,7 +37,6 @@ function About() {
         <div className="particle" data-speed="10"></div>
       </div>
 
-      {/* About Content */}
       <h2>About Me</h2>
       <p>
         Always had a keen interest in technology and a love for problem-solving.

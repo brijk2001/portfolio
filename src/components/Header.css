@@ -1,4 +1,3 @@
-/* General Header Styles */
 .header {
   position: sticky;
   top: 0;
@@ -16,7 +15,6 @@ body.dark-mode .header {
   background-color: rgba(40, 40, 40, 0.95);
 }
 
-/* Navbar Layout */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,11 +28,11 @@ body.dark-mode .header {
   color: var(--secondary-color);
 }
 
-/* Navbar Links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin-left: 100px;
 }
 
 .nav-links a {
@@ -51,7 +49,6 @@ body.dark-mode .header {
   color: white;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   display: none;
   background: none;
@@ -66,7 +63,6 @@ body.dark-mode .header {
   color: var(--primary-color);
 }
 
-/* Dark Mode Toggle Button */
 .toggle-theme {
   background: none;
   border: none;
@@ -75,28 +71,26 @@ body.dark-mode .header {
   cursor: pointer;
   z-index: 1100;
   position: relative;
-  margin-left: auto; /* Push it to the far right */
+  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between icon and text */
+  gap: 0.5rem;
 }
 
 .toggle-theme:hover {
   color: var(--link-hover);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
     position: absolute;
-    /* top: 1rem; */
-    left: 0.5rem; /* Add space between the hamburger and logo */
+    left: 0.5rem;
   }
 
   .logo {
-    font-size: 1.5rem; /* Slightly reduce logo size for smaller screens */
-    margin-left: 3rem; /* Add space between the logo and the hamburger */
+    font-size: 1.5rem;
+    margin-left: 3rem;
   }
 
   .nav-links {
@@ -127,11 +121,11 @@ body.dark-mode .header {
   }
 
   .toggle-theme {
-    gap: 0; /* Remove spacing between icon and text */
-    font-size: 1rem; /* Increase icon size */
+    gap: 0;
+    font-size: 1rem;
   }
 
   .toggle-theme::after {
-    content: ""; /* Remove text for mobile screens */
+    content: "";
   }
 }

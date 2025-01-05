@@ -40,7 +40,6 @@
   background-color: #3d9a99;
 }
 
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .contact h2 {
     font-size: 1.5rem;
@@ -50,4 +49,9 @@
     font-size: 0.9rem;
     padding: 0 1rem;
   }
+}
+
+.linkedin-logo {
+  width: 20px;
+  height: 20px;
 }
